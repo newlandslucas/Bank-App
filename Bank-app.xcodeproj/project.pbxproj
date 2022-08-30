@@ -13,6 +13,11 @@
 		94DA502B28BE74D7000ADF3B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94DA502A28BE74D7000ADF3B /* Preview Assets.xcassets */; };
 		94DA503228BE750F000ADF3B /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DA503128BE750F000ADF3B /* CardView.swift */; };
 		94DA503528BE7F8C000ADF3B /* TransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DA503428BE7F8C000ADF3B /* TransactionsView.swift */; };
+		94DA503728BE83BE000ADF3B /* CardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DA503628BE83BE000ADF3B /* CardList.swift */; };
+		94DA503928BE83F8000ADF3B /* TransactionsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DA503828BE83F8000ADF3B /* TransactionsRow.swift */; };
+		94DA503B28BE867F000ADF3B /* TransactionsHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DA503A28BE867F000ADF3B /* TransactionsHeader.swift */; };
+		94DA503F28BE8805000ADF3B /* CardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DA503E28BE8805000ADF3B /* CardScreen.swift */; };
+		94DA504128BE8A8B000ADF3B /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DA504028BE8A8B000ADF3B /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +28,11 @@
 		94DA502A28BE74D7000ADF3B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		94DA503128BE750F000ADF3B /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		94DA503428BE7F8C000ADF3B /* TransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsView.swift; sourceTree = "<group>"; };
+		94DA503628BE83BE000ADF3B /* CardList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardList.swift; sourceTree = "<group>"; };
+		94DA503828BE83F8000ADF3B /* TransactionsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsRow.swift; sourceTree = "<group>"; };
+		94DA503A28BE867F000ADF3B /* TransactionsHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsHeader.swift; sourceTree = "<group>"; };
+		94DA503E28BE8805000ADF3B /* CardScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardScreen.swift; sourceTree = "<group>"; };
+		94DA504028BE8A8B000ADF3B /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +87,11 @@
 			children = (
 				94DA503128BE750F000ADF3B /* CardView.swift */,
 				94DA503428BE7F8C000ADF3B /* TransactionsView.swift */,
+				94DA503628BE83BE000ADF3B /* CardList.swift */,
+				94DA503828BE83F8000ADF3B /* TransactionsRow.swift */,
+				94DA503A28BE867F000ADF3B /* TransactionsHeader.swift */,
+				94DA503E28BE8805000ADF3B /* CardScreen.swift */,
+				94DA504028BE8A8B000ADF3B /* HeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -152,7 +167,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				94DA502628BE74D5000ADF3B /* ContentView.swift in Sources */,
+				94DA504128BE8A8B000ADF3B /* HeaderView.swift in Sources */,
+				94DA503928BE83F8000ADF3B /* TransactionsRow.swift in Sources */,
 				94DA503528BE7F8C000ADF3B /* TransactionsView.swift in Sources */,
+				94DA503728BE83BE000ADF3B /* CardList.swift in Sources */,
+				94DA503B28BE867F000ADF3B /* TransactionsHeader.swift in Sources */,
+				94DA503F28BE8805000ADF3B /* CardScreen.swift in Sources */,
 				94DA503228BE750F000ADF3B /* CardView.swift in Sources */,
 				94DA502428BE74D5000ADF3B /* Bank_appApp.swift in Sources */,
 			);

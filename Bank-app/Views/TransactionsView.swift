@@ -9,37 +9,18 @@ import SwiftUI
 
 struct TransactionsView: View {
     var body: some View {
-        LazyVStack {
-            ForEach(0..<10, id: \.self) {item in
-                TransactionRow()
+        VStack(spacing: -40) {
+            TransactionsHeader()
+            LazyVStack {
+                ForEach(0..<10, id: \.self) {item in
+                    TransactionsRow()
+                }
             }
+            .background(Color.white)
+            .cornerRadius(20)
         }
-    }
-}
+        .padding(.horizontal)
 
-struct TransactionRow: View {
-    var body: some View {
-        HStack {
-            Image("apple-logo")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 30, height: 30)
-                .padding(5)
-            
-            
-            VStack(alignment: .leading) {
-                Text("Apple")
-                    .font(.headline)
-                Text("30 Ago 2022 15:45")
-                    .font(.caption)
-                    .foregroundColor(Color(.secondaryLabel))
-            }
-            
-            Spacer()
-            Text("- R$250,00")
-                .font(.headline)
-        }
-        .padding(8)
     }
 }
 
