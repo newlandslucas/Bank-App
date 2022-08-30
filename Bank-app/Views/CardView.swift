@@ -9,23 +9,24 @@ import SwiftUI
 
 struct CardView: View {
     @State var isActive: Bool = false
+    @State var imageLogo: String = "VISA-Logo"
+    @State var balance: String = "17.000,00"
     
     var body: some View {
         
-        VStack(alignment: .leading) {
+        VStack(alignment: .leading, spacing: 5) {
             Spacer()
             HStack {
                 Spacer()
-                Image("VISA-Logo") // logo
+                Image(imageLogo) // logo
                     .resizable()
                     .aspectRatio(contentMode: .fill)
-                    .frame(width: 35, height: 15)
+                    .frame(width: 40, height: 25)
                     .padding(3)
                     .foregroundColor(isActive ? .white : .black)
             }
             
             Spacer()
-            
             Text("Saldo")
                 .foregroundColor(isActive ? .white : .black)
                 .font(.caption)
@@ -34,17 +35,20 @@ struct CardView: View {
                 Text("R$")
                     .font(.caption)
                     .foregroundColor(isActive ? .white : .black)
-                Text("17.370,52")
-                    .font(.caption)
+                Text(balance)
+                    .font(.headline)
+                    .fontWeight(.heavy)
                     .foregroundColor(isActive ? .white : .black)
                 
             }
-                .padding(.bottom)
+                .padding(.bottom, 5)
+            Spacer()
             Text("**** **** **** 3022")
                 .foregroundColor(isActive ? .white : .black)
                 .font(.caption)
+                .padding(.bottom)
         }
-        .frame(width: 150, height: 150)
+        .frame(width: 130, height: 170)
         .padding(8)
         .background(Color(isActive ? .black : .white))
         .cornerRadius(20)
