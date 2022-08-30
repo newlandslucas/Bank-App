@@ -22,9 +22,9 @@ struct CardScreen: View {
                     Spacer()
                 }
                 .padding()
-                ScrollView(.horizontal, showsIndicators: false) {
+                
                     CardList()
-                }
+                
                 
                 HStack {
                     Text("Transações")

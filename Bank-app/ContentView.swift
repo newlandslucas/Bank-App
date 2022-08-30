@@ -20,6 +20,7 @@ struct ContentView: View {
             VStack {}
             .tabItem{Label("Perfil", systemImage: "person")}
         }
+        .foregroundColor(Color.black)
     }
 }
 
