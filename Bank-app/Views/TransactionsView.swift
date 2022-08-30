@@ -11,8 +11,9 @@ struct TransactionsView: View {
     var body: some View {
         VStack(spacing: -40) {
             TransactionsHeader()
+            
             LazyVStack {
-                ForEach(0..<10, id: \.self) {item in
+                ForEach(0..<3, id: \.self) {item in
                     TransactionsRow()
                 }
             }

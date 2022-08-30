@@ -24,7 +24,6 @@ struct CardView: View {
                     .frame(width: 35, height: 30)
                     .padding(8)
                     .cornerRadius(10)
-                
 
             }
             
