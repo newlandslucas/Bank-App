@@ -20,9 +20,10 @@ struct CardList: View {
                     
                 }
             .shadow(color: .black.opacity(0.2), radius: 5, x: 5, y: 5)
+            .padding(20)
+
             }
 
-        .padding(20)
         
     }
 }
