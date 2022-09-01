@@ -13,9 +13,12 @@ struct TransactionsView: View {
             TransactionsHeader()
             
             LazyVStack {
-                ForEach(0..<3, id: \.self) {item in
-                    TransactionsRow()
-                }
+                TransactionsRow()
+                TransactionsRow(value: "17,90", logo: "spotify-logo", date: "1 de set 2022", company: "Spotify")
+                TransactionsRow(value: "180,00", logo: "shell-logo", date: "1 de set 2022", company: "Shell Box")
+                TransactionsRow(value: "35,00", logo: "netflix-logo", date: "04 de set 2022", company: "Netflix")
+                TransactionsRow(value: "18,00", logo: "primevideo-logo", date: "04 de set 2022", company: "Amazon Prime Video")
+
             }
             .background(Color.white)
             .cornerRadius(20)

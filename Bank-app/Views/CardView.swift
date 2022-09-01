@@ -21,7 +21,8 @@ struct CardView: View {
                 
              Image(imageLogo)
                     .resizable()
-                    .frame(width: 35, height: 30)
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 40, height: 35)
                     .padding(8)
                     .cornerRadius(10)
 
@@ -61,6 +62,8 @@ struct CardView_Previews: PreviewProvider {
         CardView(isActive: true)
             .previewLayout(.sizeThatFits)
         CardView(isActive: false, imageLogo: "mastercard-logo", balance: "5.000,00")
+            .previewLayout(.sizeThatFits)
+        CardView(isActive: false, imageLogo: "americanexpress-logo", balance: "5.000,00")
             .previewLayout(.sizeThatFits)
     }
 }

@@ -11,18 +11,22 @@ import SwiftUI
 
 struct TransactionsRow: View {
     @State var value: String = "250,00"
+    @State var logo: String = "apple-logo"
+    @State var date: String = "30 de ago  2022"
+    @State var company: String = "Apple"
+    
     var body: some View {
         HStack {
-            Image("apple-logo")
+            Image(logo)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 30, height: 30)
                 .padding(5)
             
             VStack(alignment: .leading) {
-                Text("Apple")
+                Text(company)
                     .font(.headline)
-                Text("30 de ago 2022 19:20")
+                Text(date)
                     .font(.caption)
                     .foregroundColor(.gray)
             }

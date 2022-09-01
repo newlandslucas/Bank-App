@@ -17,6 +17,7 @@ struct CardList: View {
             LazyHStack {
                 CardView(isActive: true)
                 CardView(isActive: false, imageLogo: "mastercard-logo", balance: "5.000,00")
+                CardView(isActive: false, imageLogo: "americanexpress-logo", balance: "20.000,00")
                     
                 }
             .shadow(color: .black.opacity(0.2), radius: 5, x: 5, y: 5)
