@@ -7,56 +7,60 @@
 
 import SwiftUI
 
-struct CardScreen: View {
+struct ShopScreen: View {
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack(alignment: .leading, spacing: 15) {
             SecondHeader()
             ScrollView(.vertical, showsIndicators: false) {
                 
-                Spacer()
-            
-                
-                VStack(alignment: .leading) {
-                    Text("Ofertas para você")
-                        .fontWeight(.semibold)
+                VStack(spacing: 15) {
+                    VStack(alignment: .leading) {
+                        Text("Ofertas para você")
+                            .fontWeight(.semibold)
+                        
+                        offersCard()
+                        Divider()
+                        offersCard(imageLogo: "netflix-logo", title: "Netflix", subTitle: "", percentage: "10", percentageText: "desconto")
+                        Divider()
+                        offersCard(imageLogo: "primevideo-logo", title: "Amazon Prime Video", subTitle:"", percentage: "40", percentageText: "desconto")
+                    }
                     
-                    offersCard()
-                    offersCard(imageLogo: "netflix-logo", title: "Netflix", subTitle: "", percentage: "10", percentageText: "desconto")
-                    offersCard(imageLogo: "primevideo-logo", title: "Amazon Prime Video", subTitle:"", percentage: "40", percentageText: "desconto")
-                }
-                .padding()
-                
-                VStack(alignment: .leading) {
-                    Text("Games")
-                        .fontWeight(.semibold)
+                    Spacer()
                     
-                    offersCard(imageLogo: "xbox-logo", title: "Xbox", subTitle: "Desconto em jogos selecionados", percentage: "8", percentageText: "de desconto")
-                    Divider()
-                    offersCard(imageLogo: "apple-arcade", title: "Apple Arcade", subTitle: "Desconto na assinatura mensal", percentage: "20", percentageText: "de desconto")
-                    Divider()
-                    offersCard(imageLogo: "playstaion-logo", title: "Playstation", subTitle: "Desconto em jogos selecionados", percentage: "15", percentageText: "de desconto")
-                }
-                .padding()
-                
-                VStack(alignment: .leading) {
-                    Text("Viagem")
-                        .fontWeight(.semibold)
+                    VStack(alignment: .leading) {
+                        Text("Games")
+                            .fontWeight(.semibold)
+                        
+                        offersCard(imageLogo: "xbox-logo", title: "Xbox", subTitle: "Desconto em jogos selecionados", percentage: "8", percentageText: "de desconto")
+                        Divider()
+                        offersCard(imageLogo: "apple-arcade", title: "Apple Arcade", subTitle: "Desconto na assinatura mensal", percentage: "20", percentageText: "de desconto")
+                        Divider()
+                        offersCard(imageLogo: "playstaion-logo", title: "Playstation", subTitle: "Desconto em jogos selecionados", percentage: "15", percentageText: "de desconto")
+                    }
                     
-                    offersCard(imageLogo: "gol-logo", title: "Gol Linhas Áereas", subTitle:  "Descontos especiais em trechos nacionais", percentage: "20", percentageText: "desconto")
-                    Divider()
-                    offersCard(imageLogo: "latam-logo", title: "Latam", subTitle: "Descontos especiais", percentage: "25", percentageText: "desconto")
+                    Spacer()
+                    
+                    VStack(alignment: .leading) {
+                        Text("Viagens")
+                            .fontWeight(.semibold)
+                        
+                        ScrollView(.horizontal, showsIndicators: false) {
+                            HStack(spacing: 10) {
+                                TripCard()
+                                TripCard(logo: "gol2-logo", percentage: "20%", title: "Gol")
+                            }
+                          
+                        }
+                    }
                 }
-                .padding()
-                
-                
-                Spacer()
             }
+            .padding()
         }
     }
 }
 
-struct CardScreen_Previews: PreviewProvider {
+struct ShopScreen_Previews: PreviewProvider {
     static var previews: some View {
-        CardScreen()
+        ShopScreen()
     }
 }

@@ -13,9 +13,9 @@ struct ContentView: View {
         TabView {
             HomeScreen()
                 .tabItem { Label("Home", systemImage: "house") }
-            CardScreen()
+            VStack{}
             .tabItem{Label("Cartões", systemImage: "creditcard.fill")}
-            VStack {}
+            ShopScreen()
             .tabItem{Label("Shop", systemImage: "bag.fill")}
             VStack {}
             .tabItem{Label("Perfil", systemImage: "person")}

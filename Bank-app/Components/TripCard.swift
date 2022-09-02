@@ -8,8 +8,41 @@
 import SwiftUI
 
 struct TripCard: View {
+    @State var logo: String = "latam2-logo"
+    @State var percentage: String = "15%"
+    @State var title: String = "Latam"
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        Button {
+            print("Clicou")
+        } label: {
+            VStack(alignment: .leading, spacing: 2) {
+                Image(logo)
+                    .resizable()
+                    .cornerRadius(15)
+                    .frame(width: 180, height: 100)
+                
+                Spacer()
+                
+                Text(title)
+                    .foregroundColor(.black)
+                    .fontWeight(.bold)
+                
+                    .font(.system(size: 16))
+                Text("\(percentage) de desconto")
+                    .foregroundColor(.black)
+                    .font(.system(size: 14))
+                
+                Text("Em trechos selecionados")
+                    .foregroundColor(.black)
+                    .font(.system(size: 14))
+                
+                Spacer()
+            }
+            .frame(width: 180, height: 200)
+            .cornerRadius(15)
+        }
+
     }
 }
 
