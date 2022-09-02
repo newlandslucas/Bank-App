@@ -11,12 +11,12 @@ struct ContentView: View {
     var body: some View {
         
         TabView {
-            CardScreen()
+            HomeScreen()
                 .tabItem { Label("Home", systemImage: "house") }
-            VStack {}
+            CardScreen()
             .tabItem{Label("Cartões", systemImage: "creditcard.fill")}
             VStack {}
-            .tabItem{Label("Carteira", systemImage: "dollarsign.square")}
+            .tabItem{Label("Shop", systemImage: "bag.fill")}
             VStack {}
             .tabItem{Label("Perfil", systemImage: "person")}
         }

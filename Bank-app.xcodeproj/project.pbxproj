@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94C2F23428C287B300D36A3F /* CardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C2F23328C287B300D36A3F /* CardScreen.swift */; };
+		94C2F23728C288A500D36A3F /* SecondHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C2F23628C288A500D36A3F /* SecondHeader.swift */; };
+		94C2F23928C2910F00D36A3F /* offersCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C2F23828C2910F00D36A3F /* offersCard.swift */; };
+		94C2F23B28C2991600D36A3F /* TripCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C2F23A28C2991600D36A3F /* TripCard.swift */; };
 		94DA502428BE74D5000ADF3B /* Bank_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DA502328BE74D5000ADF3B /* Bank_appApp.swift */; };
 		94DA502628BE74D5000ADF3B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DA502528BE74D5000ADF3B /* ContentView.swift */; };
 		94DA502828BE74D7000ADF3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94DA502728BE74D7000ADF3B /* Assets.xcassets */; };
@@ -16,11 +20,15 @@
 		94DA503728BE83BE000ADF3B /* CardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DA503628BE83BE000ADF3B /* CardList.swift */; };
 		94DA503928BE83F8000ADF3B /* TransactionsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DA503828BE83F8000ADF3B /* TransactionsRow.swift */; };
 		94DA503B28BE867F000ADF3B /* TransactionsHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DA503A28BE867F000ADF3B /* TransactionsHeader.swift */; };
-		94DA503F28BE8805000ADF3B /* CardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DA503E28BE8805000ADF3B /* CardScreen.swift */; };
+		94DA503F28BE8805000ADF3B /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DA503E28BE8805000ADF3B /* HomeScreen.swift */; };
 		94DA504128BE8A8B000ADF3B /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DA504028BE8A8B000ADF3B /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		94C2F23328C287B300D36A3F /* CardScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardScreen.swift; sourceTree = "<group>"; };
+		94C2F23628C288A500D36A3F /* SecondHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondHeader.swift; sourceTree = "<group>"; };
+		94C2F23828C2910F00D36A3F /* offersCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = offersCard.swift; sourceTree = "<group>"; };
+		94C2F23A28C2991600D36A3F /* TripCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripCard.swift; sourceTree = "<group>"; };
 		94DA502028BE74D5000ADF3B /* Bank-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bank-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94DA502328BE74D5000ADF3B /* Bank_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank_appApp.swift; sourceTree = "<group>"; };
 		94DA502528BE74D5000ADF3B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -31,7 +39,7 @@
 		94DA503628BE83BE000ADF3B /* CardList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardList.swift; sourceTree = "<group>"; };
 		94DA503828BE83F8000ADF3B /* TransactionsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsRow.swift; sourceTree = "<group>"; };
 		94DA503A28BE867F000ADF3B /* TransactionsHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsHeader.swift; sourceTree = "<group>"; };
-		94DA503E28BE8805000ADF3B /* CardScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardScreen.swift; sourceTree = "<group>"; };
+		94DA503E28BE8805000ADF3B /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		94DA504028BE8A8B000ADF3B /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -46,6 +54,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		94C2F23228C287A400D36A3F /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				94DA503E28BE8805000ADF3B /* HomeScreen.swift */,
+				94C2F23328C287B300D36A3F /* CardScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		94C2F23528C2889A00D36A3F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				94C2F23628C288A500D36A3F /* SecondHeader.swift */,
+				94C2F23828C2910F00D36A3F /* offersCard.swift */,
+				94C2F23A28C2991600D36A3F /* TripCard.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		94DA501728BE74D5000ADF3B = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +92,8 @@
 		94DA502228BE74D5000ADF3B /* Bank-app */ = {
 			isa = PBXGroup;
 			children = (
+				94C2F23528C2889A00D36A3F /* Components */,
+				94C2F23228C287A400D36A3F /* Screen */,
 				94DA503328BE7F6E000ADF3B /* Views */,
 				94DA502328BE74D5000ADF3B /* Bank_appApp.swift */,
 				94DA502528BE74D5000ADF3B /* ContentView.swift */,
@@ -90,7 +119,6 @@
 				94DA503628BE83BE000ADF3B /* CardList.swift */,
 				94DA503828BE83F8000ADF3B /* TransactionsRow.swift */,
 				94DA503A28BE867F000ADF3B /* TransactionsHeader.swift */,
-				94DA503E28BE8805000ADF3B /* CardScreen.swift */,
 				94DA504028BE8A8B000ADF3B /* HeaderView.swift */,
 			);
 			path = Views;
@@ -172,7 +200,11 @@
 				94DA503528BE7F8C000ADF3B /* TransactionsView.swift in Sources */,
 				94DA503728BE83BE000ADF3B /* CardList.swift in Sources */,
 				94DA503B28BE867F000ADF3B /* TransactionsHeader.swift in Sources */,
-				94DA503F28BE8805000ADF3B /* CardScreen.swift in Sources */,
+				94C2F23928C2910F00D36A3F /* offersCard.swift in Sources */,
+				94C2F23728C288A500D36A3F /* SecondHeader.swift in Sources */,
+				94DA503F28BE8805000ADF3B /* HomeScreen.swift in Sources */,
+				94C2F23B28C2991600D36A3F /* TripCard.swift in Sources */,
+				94C2F23428C287B300D36A3F /* CardScreen.swift in Sources */,
 				94DA503228BE750F000ADF3B /* CardView.swift in Sources */,
 				94DA502428BE74D5000ADF3B /* Bank_appApp.swift in Sources */,
 			);

@@ -14,12 +14,18 @@ struct HeaderView: View {
             HStack {
                 VStack(alignment: .leading) {
                     Text("Bem vindo, de volta")
-                        .font(.system(size: 22, weight: .bold, design: .rounded))
+                        .font(.system(size: 18, weight: .bold, design: .rounded))
                     Text("Lucas Newlands")
                         .font(.system(size: 26, weight: .light, design: .rounded))
                 }
                 
                 Spacer()
+                
+                Image("userProfile")
+                    .resizable()
+                    .frame(width: 50, height: 50)
+                    .aspectRatio(contentMode: .fit)
+                    .cornerRadius(30)
                 
             }
             
