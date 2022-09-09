@@ -11,6 +11,8 @@
 		94C2F23728C288A500D36A3F /* SecondHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C2F23628C288A500D36A3F /* SecondHeader.swift */; };
 		94C2F23928C2910F00D36A3F /* offersCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C2F23828C2910F00D36A3F /* offersCard.swift */; };
 		94C2F23B28C2991600D36A3F /* TripCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C2F23A28C2991600D36A3F /* TripCard.swift */; };
+		94C2F23D28C45F6800D36A3F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C2F23C28C45F6800D36A3F /* ProfileView.swift */; };
+		94C2F23F28C4646200D36A3F /* HeaderProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C2F23E28C4646200D36A3F /* HeaderProfile.swift */; };
 		94DA502428BE74D5000ADF3B /* Bank_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DA502328BE74D5000ADF3B /* Bank_appApp.swift */; };
 		94DA502628BE74D5000ADF3B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DA502528BE74D5000ADF3B /* ContentView.swift */; };
 		94DA502828BE74D7000ADF3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94DA502728BE74D7000ADF3B /* Assets.xcassets */; };
@@ -29,6 +31,8 @@
 		94C2F23628C288A500D36A3F /* SecondHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondHeader.swift; sourceTree = "<group>"; };
 		94C2F23828C2910F00D36A3F /* offersCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = offersCard.swift; sourceTree = "<group>"; };
 		94C2F23A28C2991600D36A3F /* TripCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripCard.swift; sourceTree = "<group>"; };
+		94C2F23C28C45F6800D36A3F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		94C2F23E28C4646200D36A3F /* HeaderProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderProfile.swift; sourceTree = "<group>"; };
 		94DA502028BE74D5000ADF3B /* Bank-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bank-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94DA502328BE74D5000ADF3B /* Bank_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank_appApp.swift; sourceTree = "<group>"; };
 		94DA502528BE74D5000ADF3B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +63,7 @@
 			children = (
 				94DA503E28BE8805000ADF3B /* HomeScreen.swift */,
 				94C2F23328C287B300D36A3F /* CardScreen.swift */,
+				94C2F23C28C45F6800D36A3F /* ProfileView.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -69,6 +74,7 @@
 				94C2F23628C288A500D36A3F /* SecondHeader.swift */,
 				94C2F23828C2910F00D36A3F /* offersCard.swift */,
 				94C2F23A28C2991600D36A3F /* TripCard.swift */,
+				94C2F23E28C4646200D36A3F /* HeaderProfile.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -206,6 +212,8 @@
 				94C2F23B28C2991600D36A3F /* TripCard.swift in Sources */,
 				94C2F23428C287B300D36A3F /* CardScreen.swift in Sources */,
 				94DA503228BE750F000ADF3B /* CardView.swift in Sources */,
+				94C2F23D28C45F6800D36A3F /* ProfileView.swift in Sources */,
+				94C2F23F28C4646200D36A3F /* HeaderProfile.swift in Sources */,
 				94DA502428BE74D5000ADF3B /* Bank_appApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

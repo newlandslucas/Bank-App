@@ -23,7 +23,7 @@ struct HeaderView: View {
                 
                 Image("userProfile")
                     .resizable()
-                    .frame(width: 50, height: 50)
+                    .frame(width: 35, height: 35)
                     .aspectRatio(contentMode: .fit)
                     .cornerRadius(30)
                 
@@ -33,8 +33,6 @@ struct HeaderView: View {
             .frame(width: 350, height: 0.5)
             .background(Color.black)
         }
-        .shadow(color: .black, radius: 0, x: 0, y: 0)
-
         .padding()
     }
 }

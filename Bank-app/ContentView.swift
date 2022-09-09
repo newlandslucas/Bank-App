@@ -10,17 +10,22 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
-        TabView {
-            HomeScreen()
-                .tabItem { Label("Home", systemImage: "house") }
-            VStack{}
-            .tabItem{Label("Cartões", systemImage: "creditcard.fill")}
-            ShopScreen()
-            .tabItem{Label("Shop", systemImage: "bag.fill")}
-            VStack {}
-            .tabItem{Label("Perfil", systemImage: "person")}
+        HStack {
+            TabView {
+                HomeScreen()
+                    .tabItem { Label("Home", systemImage: "house") }
+                    
+                
+                VStack{}
+                .tabItem{Label("Cartões", systemImage: "creditcard.fill")}
+                ShopScreen()
+                .tabItem{Label("Shop", systemImage: "bag.fill")}
+                ProfileView()
+                .tabItem{Label("Perfil", systemImage: "person")}
+            }
         }
-        .foregroundColor(Color.black)
+        .background(Color.black)
+
     }
 }
 

@@ -14,46 +14,51 @@ struct CardView: View {
     
     var body: some View {
         
-        VStack(alignment: .leading, spacing: 5) {
-            Spacer()
-            HStack {
+        Button {
+            print("Clicou")
+        } label: {
+            VStack(alignment: .leading, spacing: 5) {
                 Spacer()
-                
-             Image(imageLogo)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 40, height: 35)
-                    .padding(8)
-                    .cornerRadius(10)
+                HStack {
+                    Spacer()
+                    
+                 Image(imageLogo)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 40, height: 35)
+                        .padding(8)
+                        .cornerRadius(10)
 
-            }
-            
-            Spacer()
-            Text("Fatura")
-                .foregroundColor(isActive ? .white : .black)
-                .font(.caption)
-            
-            HStack(alignment: .center) {
-                Text("R$")
-                    .font(.caption)
-                    .foregroundColor(isActive ? .white : .black)
-                Text(balance)
-                    .font(.headline)
-                    .fontWeight(.heavy)
-                    .foregroundColor(isActive ? .white : .black)
+                }
                 
+                Spacer()
+                Text("Fatura")
+                    .foregroundColor(isActive ? .white : .black)
+                    .font(.caption)
+                
+                HStack(alignment: .center) {
+                    Text("R$")
+                        .font(.caption)
+                        .foregroundColor(isActive ? .white : .black)
+                    Text(balance)
+                        .font(.headline)
+                        .fontWeight(.heavy)
+                        .foregroundColor(isActive ? .white : .black)
+                    
+                }
+                    .padding(.bottom, 5)
+                Spacer()
+                Text("**** **** **** 3022")
+                    .foregroundColor(isActive ? .white : .black)
+                    .font(.caption)
+                    .padding(.bottom)
             }
-                .padding(.bottom, 5)
-            Spacer()
-            Text("**** **** **** 3022")
-                .foregroundColor(isActive ? .white : .black)
-                .font(.caption)
-                .padding(.bottom)
+            .frame(width: 130, height: 170)
+            .padding(8)
+            .background(Color(isActive ? .black : .white))
+            .cornerRadius(20)
         }
-        .frame(width: 130, height: 170)
-        .padding(8)
-        .background(Color(isActive ? .black : .white))
-        .cornerRadius(20)
+
     }
 }
 
