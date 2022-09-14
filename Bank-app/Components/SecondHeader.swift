@@ -15,8 +15,10 @@ struct SecondHeader: View {
                 VStack(alignment: .leading, spacing: 5) {
                     Text("Sexta feira")
                         .fontWeight(.bold)
+                        .foregroundColor(.black)
                     Text("2 de Set de 2022")
                         .font(.system(size: 12))
+                        .foregroundColor(.black)
                 }
                 .foregroundColor(.white)
                 Spacer()
@@ -27,7 +29,7 @@ struct SecondHeader: View {
                     Image(systemName: "questionmark.circle.fill")
                         .resizable()
                         .frame(width: 30, height: 30)
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
                         
                 }
                 
@@ -37,7 +39,7 @@ struct SecondHeader: View {
                     Image(systemName: "message.circle.fill")
                         .resizable()
                         .frame(width: 30, height: 30)
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
                         
                 }
 
@@ -45,7 +47,7 @@ struct SecondHeader: View {
             }
             .padding(.horizontal, 30)
             .frame(width: 400, height: 95)
-            .background(Color.black)
+            .background(Color.white)
         }      
         
         

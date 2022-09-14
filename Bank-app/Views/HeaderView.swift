@@ -10,30 +10,25 @@ import SwiftUI
 struct HeaderView: View {
     var body: some View {
         
-        VStack {
+        VStack() {
             HStack {
-                VStack(alignment: .leading) {
+                VStack(alignment: .leading, spacing: 10) {
                     Text("Bem vindo, de volta")
-                        .font(.system(size: 18, weight: .bold, design: .rounded))
+                        .font(.system(size: 14, weight: .bold, design: .rounded))
                     Text("Lucas Newlands")
-                        .font(.system(size: 26, weight: .light, design: .rounded))
+                        .font(.system(size: 24, weight: .light, design: .monospaced))
                 }
                 
                 Spacer()
                 
-                Image("userProfile")
-                    .resizable()
-                    .frame(width: 35, height: 35)
-                    .aspectRatio(contentMode: .fit)
-                    .cornerRadius(30)
-                
             }
             
             VStack {}
-            .frame(width: 350, height: 0.5)
-            .background(Color.black)
+            .frame(width: 360, height: 0.5)
+            .background(Color.black.opacity(0.5))
         }
         .padding()
+        .padding(.horizontal, 5)
     }
 }
 

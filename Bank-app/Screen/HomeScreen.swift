@@ -16,6 +16,27 @@ struct HomeScreen: View {
                 HeaderView()
                 
                 HStack {
+                    VStack(alignment: .leading) {
+                        Text("Saldo em conta")
+                            .font(.system(size: 12, weight: .light, design: .rounded))
+                        
+                        HStack(alignment: .center, spacing: 0) {
+                            Text("R$ ")
+                            VStack {
+                                Text("0,00")
+                                
+                            }
+
+                        }
+                        
+                    }
+                   
+                    
+                    Spacer()
+                }
+                .padding()
+                
+                HStack {
                     Text("Meus Cartões")
                         .font(.system(size: 18, weight: .semibold, design: .rounded))
                     

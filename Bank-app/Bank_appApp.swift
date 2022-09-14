@@ -13,5 +13,6 @@ struct Bank_appApp: App {
         WindowGroup {
             ContentView()
         }
+        
     }
 }

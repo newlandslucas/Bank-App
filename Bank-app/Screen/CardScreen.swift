@@ -2,65 +2,98 @@
 //  CardScreen.swift
 //  Bank-app
 //
-//  Created by Lucas Newlands on 02/09/22.
+//  Created by Lucas Newlands on 12/09/22.
 //
 
 import SwiftUI
 
-struct ShopScreen: View {
+struct CardScreen: View {
     var body: some View {
-        VStack(alignment: .leading, spacing: 15) {
-            SecondHeader()
-            ScrollView(.vertical, showsIndicators: false) {
+        VStack(spacing: -1) {
+            HStack {
+                Text("Cartões")
+                    .font(.title)
+                    .fontWeight(.bold)
+                Spacer()
                 
-                VStack(spacing: 15) {
-                    VStack(alignment: .leading) {
-                        Text("Ofertas para você")
-                            .fontWeight(.semibold)
-                        
-                        offersCard()
-                        Divider()
-                        offersCard(imageLogo: "netflix-logo", title: "Netflix", subTitle: "", percentage: "10", percentageText: "desconto")
-                        Divider()
-                        offersCard(imageLogo: "primevideo-logo", title: "Amazon Prime Video", subTitle:"", percentage: "40", percentageText: "desconto")
-                    }
-                    
-                    Spacer()
-                    
-                    VStack(alignment: .leading) {
-                        Text("Games")
-                            .fontWeight(.semibold)
-                        
-                        offersCard(imageLogo: "xbox-logo", title: "Xbox", subTitle: "Desconto em jogos selecionados", percentage: "8", percentageText: "de desconto")
-                        Divider()
-                        offersCard(imageLogo: "apple-arcade", title: "Apple Arcade", subTitle: "Desconto na assinatura mensal", percentage: "20", percentageText: "de desconto")
-                        Divider()
-                        offersCard(imageLogo: "playstaion-logo", title: "Playstation", subTitle: "Desconto em jogos selecionados", percentage: "15", percentageText: "de desconto")
-                    }
-                    
-                    Spacer()
-                    
-                    VStack(alignment: .leading) {
-                        Text("Viagens")
-                            .fontWeight(.semibold)
-                        
-                        ScrollView(.horizontal, showsIndicators: false) {
-                            HStack(spacing: 10) {
-                                TripCard()
-                                TripCard(logo: "gol2-logo", percentage: "20%", title: "Gol")
-                            }
-                          
-                        }
-                    }
+                Button {
+                    print("Clicou!")
+                } label: {
+                    Image(systemName: "gearshape")
+                        .foregroundColor(.black)
+                        .font(.system(size: 20))
                 }
+
+                
             }
+            // MARK: HEADER
             .padding()
+            .background(Color.white)
+            
+            //MARK: DIVIDER
+            
+            ScrollView(.vertical, showsIndicators: false) {
+              
+                VStack(spacing: 25) {
+                    HStack {
+                        Text("Meus Cartões")
+                            .font(.title3)
+                            .fontWeight(.medium)
+                        Spacer()
+                }
+                    
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        
+                        HStack {
+                            CreditCardView(name: "Lucas Newlands", cardNumber: "...0000", expires: "01/28", Title: "MasterCard", subtTitle: "Black", ColorCard: Color.white, ColorText: Color.black)
+                            
+                            CreditCardView(name: "Lucas Newlands", cardNumber: "...8888", expires: "01/28", Title: "Visa", subtTitle: "Infinite", ColorCard: Color.black, ColorText: Color.white)
+                            
+                            CreditCardView(name: "Lucas Newlands", cardNumber: "...9999", expires: "01/28", Title: "American Express", subtTitle: "", ColorCard: Color("AmericanExpressBlue"), ColorText: .white )
+                        }
+
+                    }
+                    .shadow(color: .black.opacity(0.2), radius: 5, x: 5, y: 5)
+                    
+                    //MARK: Cards View
+                    
+                    HStack {
+                        Text("Opções")
+                            .font(.title3)
+                            .fontWeight(.medium)
+                        Spacer()
+                        
+                    }
+                    
+                    VStack(alignment: .leading) {
+                        HStack {
+                            CardsOptions(imageName: "applelogo", title: "Apple Pay")
+                            CardsOptions(imageName: "plus", title: "Pedir cartão")
+                            
+                            Spacer()
+                        }
+                        .shadow(color: .black.opacity(0.2), radius: 5, x: 5, y: 5)
+                        
+                        
+                        
+                    }
+                 
+                    
+                    Spacer()
+                }
+                .padding()
+                
+            }
+            
+            Spacer()
         }
+        .background(Color("ColorGray"))
+        
     }
 }
 
-struct ShopScreen_Previews: PreviewProvider {
+struct CardScreen_Previews: PreviewProvider {
     static var previews: some View {
-        ShopScreen()
+        CardScreen()
     }
 }

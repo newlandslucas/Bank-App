@@ -16,7 +16,7 @@ struct ContentView: View {
                     .tabItem { Label("Home", systemImage: "house") }
                     
                 
-                VStack{}
+                CardScreen()
                 .tabItem{Label("Cartões", systemImage: "creditcard.fill")}
                 ShopScreen()
                 .tabItem{Label("Shop", systemImage: "bag.fill")}
