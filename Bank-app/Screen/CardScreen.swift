@@ -12,7 +12,7 @@ struct CardScreen: View {
         VStack(spacing: -1) {
             HStack {
                 Text("Cartões")
-                    .font(.title)
+                    .font(.title2)
                     .fontWeight(.bold)
                 Spacer()
                 

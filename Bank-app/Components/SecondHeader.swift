@@ -9,12 +9,22 @@ import SwiftUI
 
 struct SecondHeader: View {
     var body: some View {
-        VStack {
+        VStack(spacing: -15) {
+            
+            HStack {
+                Text("Shopping")
+                    .font(.title2)
+                    .fontWeight(.bold)
+                Spacer()
+            }
+            .padding()
+            
             HStack(spacing: 15) {
                 
                 VStack(alignment: .leading, spacing: 5) {
                     Text("Sexta feira")
                         .fontWeight(.bold)
+                        .font(.system(size: 14))
                         .foregroundColor(.black)
                     Text("2 de Set de 2022")
                         .font(.system(size: 12))
