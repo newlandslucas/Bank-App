@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9420746728D1674900357370 /* CardsOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9420746628D1674900357370 /* CardsOptions.swift */; };
+		9491DE8428D22516007AE967 /* ProfileOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9491DE8328D22516007AE967 /* ProfileOptions.swift */; };
 		94C2F23428C287B300D36A3F /* ShopScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C2F23328C287B300D36A3F /* ShopScreen.swift */; };
 		94C2F23728C288A500D36A3F /* SecondHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C2F23628C288A500D36A3F /* SecondHeader.swift */; };
 		94C2F23928C2910F00D36A3F /* offersCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C2F23828C2910F00D36A3F /* offersCard.swift */; };
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		9420746628D1674900357370 /* CardsOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsOptions.swift; sourceTree = "<group>"; };
+		9491DE8328D22516007AE967 /* ProfileOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileOptions.swift; sourceTree = "<group>"; };
 		94C2F23328C287B300D36A3F /* ShopScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopScreen.swift; sourceTree = "<group>"; };
 		94C2F23628C288A500D36A3F /* SecondHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondHeader.swift; sourceTree = "<group>"; };
 		94C2F23828C2910F00D36A3F /* offersCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = offersCard.swift; sourceTree = "<group>"; };
@@ -64,6 +66,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9491DE8228D224FE007AE967 /* ProfileScreen */ = {
+			isa = PBXGroup;
+			children = (
+				9491DE8328D22516007AE967 /* ProfileOptions.swift */,
+			);
+			path = ProfileScreen;
+			sourceTree = "<group>";
+		};
 		94C2F23228C287A400D36A3F /* Screen */ = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +88,7 @@
 		94C2F23528C2889A00D36A3F /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				9491DE8228D224FE007AE967 /* ProfileScreen */,
 				94D612F028CFA747000F53CC /* CardScreen */,
 				94C2F23628C288A500D36A3F /* SecondHeader.swift */,
 				94C2F23828C2910F00D36A3F /* offersCard.swift */,
@@ -219,6 +230,7 @@
 			files = (
 				94DA502628BE74D5000ADF3B /* ContentView.swift in Sources */,
 				94DA504128BE8A8B000ADF3B /* HeaderView.swift in Sources */,
+				9491DE8428D22516007AE967 /* ProfileOptions.swift in Sources */,
 				94DA503928BE83F8000ADF3B /* TransactionsRow.swift in Sources */,
 				94DA503528BE7F8C000ADF3B /* TransactionsView.swift in Sources */,
 				94DA503728BE83BE000ADF3B /* CardList.swift in Sources */,
