@@ -8,24 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    init() {
+        UITabBar.appearance().isTranslucent = false
+        UITabBar.appearance().unselectedItemTintColor = UIColor(Color.gray)
+        UITabBar.appearance().barTintColor = UIColor(Color.white)
+        }
     var body: some View {
         
         HStack {
             TabView {
-                HomeScreen()
+                HomeView()
                     .tabItem { Label("Home", systemImage: "house") }
-                    
-                
-                CardScreen()
+                CardsView()
                 .tabItem{Label("Cartões", systemImage: "creditcard.fill")}
-                ShopScreen()
+                ShopView()
                 .tabItem{Label("Shop", systemImage: "bag.fill")}
                 ProfileView()
                 .tabItem{Label("Perfil", systemImage: "person")}
             }
         }
-        .background(Color.black)
-
     }
 }
 

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ShopScreen: View {
+struct ShopView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             SecondHeader()
@@ -60,8 +60,8 @@ struct ShopScreen: View {
     }
 }
 
-struct ShopScreen_Previews: PreviewProvider {
+struct ShopView_Previews: PreviewProvider {
     static var previews: some View {
-        ShopScreen()
+        ShopView()
     }
 }

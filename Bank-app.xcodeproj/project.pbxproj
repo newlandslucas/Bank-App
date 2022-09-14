@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		9420746728D1674900357370 /* CardsOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9420746628D1674900357370 /* CardsOptions.swift */; };
 		9491DE8428D22516007AE967 /* ProfileOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9491DE8328D22516007AE967 /* ProfileOptions.swift */; };
-		94C2F23428C287B300D36A3F /* ShopScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C2F23328C287B300D36A3F /* ShopScreen.swift */; };
+		9491DE8728D22F2B007AE967 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 9491DE8628D22F2B007AE967 /* Charts */; };
+		94C2F23428C287B300D36A3F /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C2F23328C287B300D36A3F /* ShopView.swift */; };
 		94C2F23728C288A500D36A3F /* SecondHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C2F23628C288A500D36A3F /* SecondHeader.swift */; };
 		94C2F23928C2910F00D36A3F /* offersCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C2F23828C2910F00D36A3F /* offersCard.swift */; };
 		94C2F23B28C2991600D36A3F /* TripCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C2F23A28C2991600D36A3F /* TripCard.swift */; };
 		94C2F23D28C45F6800D36A3F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C2F23C28C45F6800D36A3F /* ProfileView.swift */; };
 		94C2F23F28C4646200D36A3F /* HeaderProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C2F23E28C4646200D36A3F /* HeaderProfile.swift */; };
-		94D612EF28CFA728000F53CC /* CardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D612EE28CFA728000F53CC /* CardScreen.swift */; };
+		94D612EF28CFA728000F53CC /* CardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D612EE28CFA728000F53CC /* CardsView.swift */; };
 		94D612F228CFA753000F53CC /* CreditCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D612F128CFA753000F53CC /* CreditCardView.swift */; };
 		94DA502428BE74D5000ADF3B /* Bank_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DA502328BE74D5000ADF3B /* Bank_appApp.swift */; };
 		94DA502628BE74D5000ADF3B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DA502528BE74D5000ADF3B /* ContentView.swift */; };
@@ -26,20 +27,20 @@
 		94DA503728BE83BE000ADF3B /* CardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DA503628BE83BE000ADF3B /* CardList.swift */; };
 		94DA503928BE83F8000ADF3B /* TransactionsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DA503828BE83F8000ADF3B /* TransactionsRow.swift */; };
 		94DA503B28BE867F000ADF3B /* TransactionsHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DA503A28BE867F000ADF3B /* TransactionsHeader.swift */; };
-		94DA503F28BE8805000ADF3B /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DA503E28BE8805000ADF3B /* HomeScreen.swift */; };
+		94DA503F28BE8805000ADF3B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DA503E28BE8805000ADF3B /* HomeView.swift */; };
 		94DA504128BE8A8B000ADF3B /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DA504028BE8A8B000ADF3B /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9420746628D1674900357370 /* CardsOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsOptions.swift; sourceTree = "<group>"; };
 		9491DE8328D22516007AE967 /* ProfileOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileOptions.swift; sourceTree = "<group>"; };
-		94C2F23328C287B300D36A3F /* ShopScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopScreen.swift; sourceTree = "<group>"; };
+		94C2F23328C287B300D36A3F /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
 		94C2F23628C288A500D36A3F /* SecondHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondHeader.swift; sourceTree = "<group>"; };
 		94C2F23828C2910F00D36A3F /* offersCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = offersCard.swift; sourceTree = "<group>"; };
 		94C2F23A28C2991600D36A3F /* TripCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripCard.swift; sourceTree = "<group>"; };
 		94C2F23C28C45F6800D36A3F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		94C2F23E28C4646200D36A3F /* HeaderProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderProfile.swift; sourceTree = "<group>"; };
-		94D612EE28CFA728000F53CC /* CardScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardScreen.swift; sourceTree = "<group>"; };
+		94D612EE28CFA728000F53CC /* CardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsView.swift; sourceTree = "<group>"; };
 		94D612F128CFA753000F53CC /* CreditCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardView.swift; sourceTree = "<group>"; };
 		94DA502028BE74D5000ADF3B /* Bank-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bank-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94DA502328BE74D5000ADF3B /* Bank_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank_appApp.swift; sourceTree = "<group>"; };
@@ -51,7 +52,7 @@
 		94DA503628BE83BE000ADF3B /* CardList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardList.swift; sourceTree = "<group>"; };
 		94DA503828BE83F8000ADF3B /* TransactionsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsRow.swift; sourceTree = "<group>"; };
 		94DA503A28BE867F000ADF3B /* TransactionsHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsHeader.swift; sourceTree = "<group>"; };
-		94DA503E28BE8805000ADF3B /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		94DA503E28BE8805000ADF3B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		94DA504028BE8A8B000ADF3B /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9491DE8728D22F2B007AE967 /* Charts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +79,10 @@
 		94C2F23228C287A400D36A3F /* Screen */ = {
 			isa = PBXGroup;
 			children = (
-				94DA503E28BE8805000ADF3B /* HomeScreen.swift */,
-				94C2F23328C287B300D36A3F /* ShopScreen.swift */,
+				94DA503E28BE8805000ADF3B /* HomeView.swift */,
+				94C2F23328C287B300D36A3F /* ShopView.swift */,
 				94C2F23C28C45F6800D36A3F /* ProfileView.swift */,
-				94D612EE28CFA728000F53CC /* CardScreen.swift */,
+				94D612EE28CFA728000F53CC /* CardsView.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -174,6 +176,9 @@
 			dependencies = (
 			);
 			name = "Bank-app";
+			packageProductDependencies = (
+				9491DE8628D22F2B007AE967 /* Charts */,
+			);
 			productName = "Bank-app";
 			productReference = 94DA502028BE74D5000ADF3B /* Bank-app.app */;
 			productType = "com.apple.product-type.application";
@@ -202,6 +207,9 @@
 				Base,
 			);
 			mainGroup = 94DA501728BE74D5000ADF3B;
+			packageReferences = (
+				9491DE8528D22F2B007AE967 /* XCRemoteSwiftPackageReference "swiftui-charts" */,
+			);
 			productRefGroup = 94DA502128BE74D5000ADF3B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -234,14 +242,14 @@
 				94DA503928BE83F8000ADF3B /* TransactionsRow.swift in Sources */,
 				94DA503528BE7F8C000ADF3B /* TransactionsView.swift in Sources */,
 				94DA503728BE83BE000ADF3B /* CardList.swift in Sources */,
-				94D612EF28CFA728000F53CC /* CardScreen.swift in Sources */,
+				94D612EF28CFA728000F53CC /* CardsView.swift in Sources */,
 				94DA503B28BE867F000ADF3B /* TransactionsHeader.swift in Sources */,
 				94C2F23928C2910F00D36A3F /* offersCard.swift in Sources */,
 				94C2F23728C288A500D36A3F /* SecondHeader.swift in Sources */,
-				94DA503F28BE8805000ADF3B /* HomeScreen.swift in Sources */,
+				94DA503F28BE8805000ADF3B /* HomeView.swift in Sources */,
 				94C2F23B28C2991600D36A3F /* TripCard.swift in Sources */,
 				94D612F228CFA753000F53CC /* CreditCardView.swift in Sources */,
-				94C2F23428C287B300D36A3F /* ShopScreen.swift in Sources */,
+				94C2F23428C287B300D36A3F /* ShopView.swift in Sources */,
 				94DA503228BE750F000ADF3B /* CardView.swift in Sources */,
 				9420746728D1674900357370 /* CardsOptions.swift in Sources */,
 				94C2F23D28C45F6800D36A3F /* ProfileView.swift in Sources */,
@@ -445,6 +453,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9491DE8528D22F2B007AE967 /* XCRemoteSwiftPackageReference "swiftui-charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/spacenation/swiftui-charts.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9491DE8628D22F2B007AE967 /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9491DE8528D22F2B007AE967 /* XCRemoteSwiftPackageReference "swiftui-charts" */;
+			productName = Charts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 94DA501828BE74D5000ADF3B /* Project object */;
 }

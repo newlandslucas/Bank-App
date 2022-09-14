@@ -6,8 +6,9 @@
 //
 
 import SwiftUI
+import Charts
 
-struct CardScreen: View {
+struct CardsView: View {
     var body: some View {
         VStack(spacing: -1) {
             HStack {
@@ -65,15 +66,56 @@ struct CardScreen: View {
                         
                     }
                     
+                    //MARK: Options 1
                     VStack(alignment: .leading) {
                         HStack {
-                            CardsOptions(imageName: "applelogo", title: "Apple Pay")
-                            CardsOptions(imageName: "plus", title: "Pedir cartão")
+                            ScrollView(.horizontal, showsIndicators: false) {
+                                HStack {
+                                    CardsOptions(imageName: "applelogo", title: "Apple Pay")
+                                    CardsOptions(imageName: "plus", title: "Pedir cartão")
+                                    CardsOptions(imageName: "", title: "Ajustar limite")
+                                }
+                            }
                             
                             Spacer()
                         }
                         .shadow(color: .black.opacity(0.2), radius: 5, x: 5, y: 5)
                         
+                        //MARK: Options
+                        HStack {
+                            ScrollView(.horizontal, showsIndicators: false) {
+                                HStack{
+                                    CardsOptions(imageName: "book", title: "Faturas")
+                                    CardsOptions(imageName: "divide.circle", title: "Parcelar fatura")
+                                    CardsOptions(imageName: "arrowtriangle.down", title: "Mais opções")
+                                }
+                            }
+                            
+                            
+                            Spacer()
+                        }
+                        .shadow(color: .black.opacity(0.2), radius: 5, x: 5, y: 5)
+                        
+                        
+                        HStack {
+                            Text("Histórico de Gastos")
+                                .font(.title3)
+                                .fontWeight(.medium)
+                            Spacer()
+                        }
+                        .padding()
+                        
+                        VStack {
+                            Chart(data: [0.1, 0.3, 0.2, 0.5, 0.4, 0.9, 0.1])
+                                .chartStyle(
+                                    LineChartStyle(.quadCurve, lineColor: .blue, lineWidth: 1.5)
+                                )
+                        }
+                        .background(Color.white)
+                        .frame(width: 330, height: 150)
+                        .cornerRadius(8)
+                        .shadow(color: .black.opacity(0.2), radius: 5, x: 5, y: 5)
+                        Spacer()
                         
                         
                     }
@@ -83,17 +125,18 @@ struct CardScreen: View {
                 }
                 .padding()
                 
+                
             }
             
-            Spacer()
+
         }
         .background(Color("ColorGray"))
         
     }
 }
 
-struct CardScreen_Previews: PreviewProvider {
+struct CardsView_Previews: PreviewProvider {
     static var previews: some View {
-        CardScreen()
+        CardsView()
     }
 }

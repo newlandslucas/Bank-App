@@ -21,7 +21,7 @@ struct CardsOptions: View {
                 Text(title)
                     .font(.system(size: 12, weight: .light, design: .rounded))
             }
-            .frame(width: 90, height: 50)
+            .frame(width: 75, height: 50)
             .padding()
             .background(Color.white)
             .cornerRadius(5.0)

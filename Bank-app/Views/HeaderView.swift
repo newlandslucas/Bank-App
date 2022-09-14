@@ -22,13 +22,10 @@ struct HeaderView: View {
                 Spacer()
                 
             }
-            
-            VStack {}
-            .frame(width: 360, height: 0.5)
-            .background(Color.black.opacity(0.5))
         }
         .padding()
         .padding(.horizontal, 5)
+        .background(Color("ColorGray"))
     }
 }
 
