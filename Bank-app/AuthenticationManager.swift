@@ -13,7 +13,6 @@ class AuthenticationManager: ObservableObject {
     @Published private(set) var biometryType: LABiometryType = .none
     private(set) var canEvaluatePolicy = false
     @Published private(set) var isAuthenticated = false
-    @Published var isAuthenticatedOnProfile = true
     @Published private(set) var errorDescription: String?
     @Published var showAlert = false
     
@@ -24,11 +23,6 @@ class AuthenticationManager: ObservableObject {
     func getBiometryType() {
         canEvaluatePolicy = context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: nil)
         biometryType = context.biometryType
-    }
-    
-    func logoff() {
-        self.isAuthenticatedOnProfile = false
-        print("Log Out")
     }
     
     func authenticateWithBiometrics() async {

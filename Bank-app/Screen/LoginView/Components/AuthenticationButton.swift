@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AuthenticationButton: View {
     var body: some View {
+        
         Text("Acessar")
             .fontWeight(.bold)
            .padding()
@@ -25,10 +26,3 @@ struct AuthenticationButton_Previews: PreviewProvider {
         AuthenticationButton()
     }
 }
-
-
-
-//Button {
-//    
-//} label: {
-//

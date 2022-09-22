@@ -99,29 +99,6 @@ struct CardsView: View {
                         }
                         .shadow(color: .black.opacity(0.2), radius: 5, x: 5, y: 5)
                         
-                        
-                        HStack {
-                            Text("Histórico de Gastos")
-                                .font(.title3)
-                                .fontWeight(.medium)
-                                .foregroundColor(.black)
-                            Spacer()
-                        }
-                        .padding()
-                        
-                        VStack {
-                            Chart(data: [0.1, 0.3, 0.2, 0.5, 0.4, 0.9, 0.1])
-                                .chartStyle(
-                                    LineChartStyle(.quadCurve, lineColor: .blue, lineWidth: 1.5)
-                                )
-                        }
-                        .background(Color.white)
-                        .frame(width: 330, height: 150)
-                        .cornerRadius(8)
-                        .shadow(color: .black.opacity(0.2), radius: 5, x: 5, y: 5)
-                        Spacer()
-                        
-                        
                     }
                  
                     

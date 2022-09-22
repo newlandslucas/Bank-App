@@ -55,9 +55,9 @@ struct ModalView: View {
                     Spacer()
                     
                     AuthenticationButton()
-                            .onTapGesture {
-                                    Task.init {
-                                        await authenticationManager.authenticateWithBiometrics()
+                        .onTapGesture {
+                            Task.init {
+                                await authenticationManager.authenticateWithBiometrics()
                                     }
                                 }
 

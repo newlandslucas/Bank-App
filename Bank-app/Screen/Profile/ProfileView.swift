@@ -8,25 +8,14 @@
 import SwiftUI
 
 struct ProfileView: View {
-    @StateObject var authenticationManager = AuthenticationManager()
 
     var body: some View {
-        
-        VStack {
-            if authenticationManager.isAuthenticatedOnProfile {
                 VStack(spacing: -15) {
                     HStack(spacing: 35) {
                         Text("Meu Perfil")
                             .font(.system(size: 20, weight: .semibold, design: .rounded))
                             .padding()
                         Spacer()
-                        
-                        LogOutButton()
-                                .onTapGesture {
-                                        Task.init {
-                                            await authenticationManager.logoff()
-                                        }
-                                    }
 
                     }
                     .foregroundColor(.white)
@@ -74,30 +63,11 @@ struct ProfileView: View {
                             ProfileOptions(text: "Fale com a gente")
                             ProfileOptions(text: "Encerre sua conta")
                         }
-                        
-                        Button {
-                            print("clicou")
-                        } label: {
-                            HStack {
-                                Text("Sair do app")
-                                
-                            }
-                            .frame(width: 250, height: 50)
-                            .background(Color.blue)
-                            .cornerRadius(8)
-                            .foregroundColor(.white)
-                        }
-
-                       
                     }
                     .ignoresSafeArea()
                     .frame(width: 400)
                     .background(.white)
             }
-            } else {
-                ContentView()
-            }
-        }
     }
     
 }
