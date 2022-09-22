@@ -19,9 +19,11 @@ struct HeaderProfile: View {
                         } label: {
                             ZStack {
                                 Circle()
+                                    .foregroundColor(.white.opacity(0.8))
                                 Text("LM")
-                                .foregroundColor(.white)
+                                .foregroundColor(.black)
                             .frame(width: 45, height: 45, alignment: .center)
+                            
                             }
                             .frame(width: 50, height: 50, alignment: .center)
                             .foregroundColor(.black.opacity(0.6))
@@ -39,37 +41,38 @@ struct HeaderProfile: View {
 
                             
                         }
+                        .foregroundColor(.white)
                     }
                     
                     Spacer()
                     
                     Text("Dados da conta corrente")
-                        .foregroundColor(Color.black.opacity(0.7))
+                        .foregroundColor(Color.gray)
                     
                     HStack(spacing: 15) {
                         VStack{
                             Text("Banco")
                                 .font(.system(size: 12))
-                                .foregroundColor(Color.black.opacity(0.7))
+                                .foregroundColor(Color.white.opacity(0.7))
                             Text("000")
                                 .font(.system(size: 12))
-                                .foregroundColor(Color.black.opacity(0.7))
+                                .foregroundColor(Color.white.opacity(0.7))
                         }
                         VStack{
                             Text("Agência")
                                 .font(.system(size: 12))
-                                .foregroundColor(Color.black.opacity(0.7))
+                                .foregroundColor(Color.white.opacity(0.7))
                             Text("000")
                                 .font(.system(size: 12))
-                                .foregroundColor(Color.black.opacity(0.7))
+                                .foregroundColor(Color.white.opacity(0.7))
                         }
                         VStack{
                             Text("Conta")
                                 .font(.system(size: 12))
-                                .foregroundColor(Color.black.opacity(0.7))
+                                .foregroundColor(Color.white.opacity(0.7))
                             Text("000000-0")
                                 .font(.system(size: 12))
-                                .foregroundColor(Color.black.opacity(0.7))
+                                .foregroundColor(Color.white.opacity(0.7))
                         }
                         
                         Spacer()
@@ -79,7 +82,7 @@ struct HeaderProfile: View {
                         } label: {
                             Image(systemName: "square.and.arrow.up")
                                 .font(.system(size: 22))
-                                .foregroundColor(.black)
+                                .foregroundColor(.white)
                         }
 
                         
@@ -92,7 +95,7 @@ struct HeaderProfile: View {
         }
         .frame(width: 360, height: 150, alignment: .leading)
         .padding()
-        .background(Color("ColorGray"))
+        .background(Color("DarkBlue"))
     }
 }
 

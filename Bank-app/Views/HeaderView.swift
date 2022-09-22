@@ -16,16 +16,18 @@ struct HeaderView: View {
                     Text("Bem vindo, de volta")
                         .font(.system(size: 14, weight: .bold, design: .rounded))
                     Text("Lucas Newlands")
-                        .font(.system(size: 24, weight: .light, design: .monospaced))
+                        .font(.system(size: 24, weight: .regular, design: .monospaced))
                 }
+                .foregroundColor(.white)
                 
                 Spacer()
                 
             }
         }
+        
         .padding()
         .padding(.horizontal, 5)
-        .background(Color("ColorGray"))
+        .background(Color("DarkBlue"))
     }
 }
 

@@ -14,12 +14,14 @@ struct ProfileOptions: View {
             HStack(alignment: .center) {
                 Text(text)
                     .font(.system(size: 14, weight: .light, design: .rounded))
+                    .foregroundColor(.black)
                 Spacer()
                 
                 Button {
                     print("clicou")
                 } label: {
                     Image(systemName: "arrow.right")
+                        .foregroundColor(.black)
                 }
 
             }
@@ -27,10 +29,9 @@ struct ProfileOptions: View {
             .frame(width: 350, height: 50)
             HStack{}
                 .frame(width: 350, height: 0.3)
-                .background(.black.opacity(0.3))
+                .background(Color.black)
         }
         .padding()
-        
       
     }
 }

@@ -8,29 +8,30 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var authenticationManager = AuthenticationManager()
+    
     init() {
-        UITabBar.appearance().isTranslucent = false
+        UITabBar.appearance().isTranslucent = true
         UITabBar.appearance().unselectedItemTintColor = UIColor(Color.gray)
         UITabBar.appearance().barTintColor = UIColor(Color.white)
         }
     var body: some View {
         
-        HStack {
-            TabView {
-                HomeView()
-                    .tabItem { Label("Home", systemImage: "house") }
-                CardsView()
-                .tabItem{Label("Cartões", systemImage: "creditcard.fill")}
-                ShopView()
-                .tabItem{Label("Shop", systemImage: "bag.fill")}
-                ProfileView()
-                .tabItem{Label("Perfil", systemImage: "person")}
+        VStack {
+            if authenticationManager.isAuthenticated {
+                NavigationView()
+            } else {
+                LoginView()
+                    .environmentObject(authenticationManager)
             }
+            
         }
+        .alert(isPresented: $authenticationManager.showAlert) {
+            Alert(title: Text("Error"), message: Text(authenticationManager.errorDescription ?? "Erro ao autenticar, tente novamente"), dismissButton: .default(Text("Ok")))
+        }
+        
     }
 }
-
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

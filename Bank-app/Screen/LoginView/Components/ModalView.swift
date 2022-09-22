@@ -9,7 +9,10 @@ import SwiftUI
 
 struct ModalView: View {
     
-    @Binding var isShowing: Bool 
+    @EnvironmentObject var authenticationManager: AuthenticationManager
+    
+    @Binding var isShowing: Bool
+    
     var body: some View {
         ZStack(alignment: .bottom) {
             if isShowing{
@@ -24,6 +27,8 @@ struct ModalView: View {
                     HStack {
                         Text("BANK APP")
                             .font(.system(size: 16, weight: .semibold, design: .rounded))
+                            .foregroundColor(.black)
+
                         
                         Spacer()
                         
@@ -39,6 +44,9 @@ struct ModalView: View {
                     VStack(alignment: .center, spacing: 5) {
                         Text("Lucas Newlands")
                             .font(.title2)
+                            .foregroundColor(.black)
+                        
+                        
                         Text("000.000.000-00")
                             .foregroundColor(.black.opacity(0.8))
                             .font(.system(size: 14))
@@ -46,30 +54,21 @@ struct ModalView: View {
                     
                     Spacer()
                     
-                    Button {
-                        print("acessar")
-                    } label: {
-                        Text("Acessar")
-                            .fontWeight(.bold)
-                    }
-                    .padding()
-                    .frame(width: 150, height: 50)
-                    .foregroundColor(.white)
-                    .background(Color.blue)
-                    .cornerRadius(12)
+                    AuthenticationButton()
+                            .onTapGesture {
+                                    Task.init {
+                                        await authenticationManager.authenticateWithBiometrics()
+                                    }
+                                }
+
                     
                     Button {
-                        print("outros dados")
+                        print("Acessar")
                     } label: {
                         Text("Alterar dados de acesso")
                             .font(.system(size: 14))
                             .foregroundColor(Color.blue)
                     }
-
-
-                   
-
-                   
                 }
                 .padding()
                 
@@ -80,6 +79,8 @@ struct ModalView: View {
                 .cornerRadius(15)
                 
             }
+            
+            Spacer()
            
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
@@ -91,5 +92,6 @@ struct ModalView: View {
 struct ModalView_Previews: PreviewProvider {
     static var previews: some View {
         LoginView()
+            .environmentObject(AuthenticationManager())
     }
 }

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9405E36728DBAFA0005DF7E2 /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9405E36628DBAFA0005DF7E2 /* NavigationView.swift */; };
+		9405E36928DBB3D7005DF7E2 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9405E36828DBB3D7005DF7E2 /* AuthenticationManager.swift */; };
+		9405E36B28DC2EC5005DF7E2 /* AuthenticationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9405E36A28DC2EC5005DF7E2 /* AuthenticationButton.swift */; };
+		9405E36E28DC32DE005DF7E2 /* LogOutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9405E36D28DC32DE005DF7E2 /* LogOutButton.swift */; };
 		9420746728D1674900357370 /* CardsOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9420746628D1674900357370 /* CardsOptions.swift */; };
 		9491DE8428D22516007AE967 /* ProfileOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9491DE8328D22516007AE967 /* ProfileOptions.swift */; };
 		9491DE8728D22F2B007AE967 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 9491DE8628D22F2B007AE967 /* Charts */; };
@@ -35,6 +39,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9405E36628DBAFA0005DF7E2 /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
+		9405E36828DBB3D7005DF7E2 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		9405E36A28DC2EC5005DF7E2 /* AuthenticationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationButton.swift; sourceTree = "<group>"; };
+		9405E36D28DC32DE005DF7E2 /* LogOutButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutButton.swift; sourceTree = "<group>"; };
 		9420746628D1674900357370 /* CardsOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsOptions.swift; sourceTree = "<group>"; };
 		9491DE8328D22516007AE967 /* ProfileOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileOptions.swift; sourceTree = "<group>"; };
 		9491DE8828D25C4F007AE967 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -74,6 +82,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9405E36C28DC32CF005DF7E2 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				94C2F23C28C45F6800D36A3F /* ProfileView.swift */,
+				9405E36D28DC32DE005DF7E2 /* LogOutButton.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		9491DE8228D224FE007AE967 /* ProfileScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +113,7 @@
 			children = (
 				9491DE8C28D25F93007AE967 /* OptionsCardLogin.swift */,
 				9491DE8E28D2750A007AE967 /* ModalView.swift */,
+				9405E36A28DC2EC5005DF7E2 /* AuthenticationButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -103,10 +121,10 @@
 		94C2F23228C287A400D36A3F /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				9405E36C28DC32CF005DF7E2 /* Profile */,
 				9491DE8A28D25F79007AE967 /* LoginView */,
 				94DA503E28BE8805000ADF3B /* HomeView.swift */,
 				94C2F23328C287B300D36A3F /* ShopView.swift */,
-				94C2F23C28C45F6800D36A3F /* ProfileView.swift */,
 				94D612EE28CFA728000F53CC /* CardsView.swift */,
 			);
 			path = Screen;
@@ -158,8 +176,10 @@
 				94DA503328BE7F6E000ADF3B /* Views */,
 				94DA502328BE74D5000ADF3B /* Bank_appApp.swift */,
 				94DA502528BE74D5000ADF3B /* ContentView.swift */,
+				9405E36628DBAFA0005DF7E2 /* NavigationView.swift */,
 				94DA502728BE74D7000ADF3B /* Assets.xcassets */,
 				94DA502928BE74D7000ADF3B /* Preview Content */,
+				9405E36828DBB3D7005DF7E2 /* AuthenticationManager.swift */,
 			);
 			path = "Bank-app";
 			sourceTree = "<group>";
@@ -268,11 +288,15 @@
 				94DA503928BE83F8000ADF3B /* TransactionsRow.swift in Sources */,
 				94DA503528BE7F8C000ADF3B /* TransactionsView.swift in Sources */,
 				94DA503728BE83BE000ADF3B /* CardList.swift in Sources */,
+				9405E36B28DC2EC5005DF7E2 /* AuthenticationButton.swift in Sources */,
 				94D612EF28CFA728000F53CC /* CardsView.swift in Sources */,
 				94DA503B28BE867F000ADF3B /* TransactionsHeader.swift in Sources */,
+				9405E36928DBB3D7005DF7E2 /* AuthenticationManager.swift in Sources */,
 				94C2F23928C2910F00D36A3F /* offersCard.swift in Sources */,
 				94C2F23728C288A500D36A3F /* SecondHeader.swift in Sources */,
 				94DA503F28BE8805000ADF3B /* HomeView.swift in Sources */,
+				9405E36728DBAFA0005DF7E2 /* NavigationView.swift in Sources */,
+				9405E36E28DC32DE005DF7E2 /* LogOutButton.swift in Sources */,
 				94C2F23B28C2991600D36A3F /* TripCard.swift in Sources */,
 				94D612F228CFA753000F53CC /* CreditCardView.swift in Sources */,
 				94C2F23428C287B300D36A3F /* ShopView.swift in Sources */,
@@ -413,6 +437,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Bank-app/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Allow FaceID to log into the app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -441,6 +466,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Bank-app/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Allow FaceID to log into the app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

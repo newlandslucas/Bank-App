@@ -15,13 +15,14 @@ struct CardsView: View {
                 Text("Cartões")
                     .font(.title2)
                     .fontWeight(.bold)
+                    .foregroundColor(.white)
                 Spacer()
                 
                 Button {
                     print("Clicou!")
                 } label: {
                     Image(systemName: "gearshape")
-                        .foregroundColor(.black)
+                        .foregroundColor(.white)
                         .font(.system(size: 20))
                 }
 
@@ -29,7 +30,7 @@ struct CardsView: View {
             }
             // MARK: HEADER
             .padding()
-            .background(Color.white)
+            .background(Color("DarkBlue"))
             
             //MARK: DIVIDER
             
@@ -40,6 +41,7 @@ struct CardsView: View {
                         Text("Meus Cartões")
                             .font(.title3)
                             .fontWeight(.medium)
+                            .foregroundColor(.black)
                         Spacer()
                 }
                     
@@ -62,6 +64,7 @@ struct CardsView: View {
                         Text("Opções")
                             .font(.title3)
                             .fontWeight(.medium)
+                            .foregroundColor(.black)
                         Spacer()
                         
                     }
@@ -101,6 +104,7 @@ struct CardsView: View {
                             Text("Histórico de Gastos")
                                 .font(.title3)
                                 .fontWeight(.medium)
+                                .foregroundColor(.black)
                             Spacer()
                         }
                         .padding()

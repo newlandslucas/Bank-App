@@ -22,6 +22,7 @@ struct TransactionsView: View {
             }
             .background(Color.white)
             .cornerRadius(20)
+            .foregroundColor(.black)
         }
         .padding(.horizontal)
 

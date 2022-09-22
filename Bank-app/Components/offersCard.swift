@@ -25,16 +25,22 @@ struct offersCard: View {
             VStack(alignment: .leading) {
                 Text(title)
                     .font(.system(size: 14, weight: .semibold, design: .rounded))
+                    .foregroundColor(.black)
                 Text(subTitle)
                     .font(.system(size: 12, weight: .light, design: .rounded))
+                    .foregroundColor(.black)
             }
             Spacer()
             
             VStack(alignment: .trailing) {
                 Text("\(percentage)% de")
                     .font(.system(size: 12, weight: .regular, design: .rounded))
+                    .foregroundColor(.black)
+
                 Text(percentageText)
                     .font(.system(size: 12, weight: .regular, design: .rounded))
+                    .foregroundColor(.black)
+
             }
             
         }

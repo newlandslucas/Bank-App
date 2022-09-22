@@ -90,6 +90,8 @@ struct LoginView: View {
                         Text("Token")
                             .font(.system(size: 15))
                             .foregroundColor(.gray)
+                        
+                        
                         Text("000000")
                     }
                     .foregroundColor(.white)
@@ -114,6 +116,7 @@ struct LoginView: View {
         }
         .ignoresSafeArea()
         .background(Color("DarkBlue"))
+        .preferredColorScheme(.dark)
     }
 }
 

@@ -16,6 +16,7 @@ struct ShopView: View {
                 VStack(spacing: 15) {
                     VStack(alignment: .leading) {
                         Text("Ofertas para você")
+                            .foregroundColor(.black)
                             .fontWeight(.semibold)
                         
                         offersCard()
@@ -29,6 +30,7 @@ struct ShopView: View {
                     
                     VStack(alignment: .leading) {
                         Text("Games")
+                            .foregroundColor(.black)
                             .fontWeight(.semibold)
                         
                         offersCard(imageLogo: "xbox-logo", title: "Xbox", subTitle: "Desconto em jogos selecionados", percentage: "8", percentageText: "de desconto")
@@ -42,6 +44,7 @@ struct ShopView: View {
                     
                     VStack(alignment: .leading) {
                         Text("Viagens")
+                            .foregroundColor(.black)
                             .fontWeight(.semibold)
                         
                         ScrollView(.horizontal, showsIndicators: false) {
@@ -56,6 +59,8 @@ struct ShopView: View {
             }
             .padding()
             .background(Color("ColorGray"))
+            .preferredColorScheme(.light)
+
         }
     }
 }

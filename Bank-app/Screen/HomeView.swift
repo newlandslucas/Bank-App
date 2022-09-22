@@ -37,6 +37,7 @@ struct HomeView: View {
                         
                         Spacer()
                     }
+                    .foregroundColor(.black)
                     .padding()
                     
                     HStack {
@@ -45,6 +46,7 @@ struct HomeView: View {
                         
                         Spacer()
                     }
+                    .foregroundColor(.black)
                     .padding()
                     
                         CardList()
@@ -56,12 +58,16 @@ struct HomeView: View {
                         
                         Spacer()
                     }
+                    .foregroundColor(.black)
                     .padding()
+                    
                     TransactionsView()
                 }
 
             }
             .background(Color("ColorGray"))
+            .preferredColorScheme(.dark)
+
         }
     }
 }
